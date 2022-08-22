@@ -10,55 +10,51 @@ Desafio para estágio como desenvolvedor back-end na Pigz.
 
 Vamos lá:
 1) Criar as seguintes entidades
-1.1) Cliente
-1.2) Telefone
+1.1) Client
+1.2) Phone
 
 2) A relação entre as entidades será:
 2.1) Um cliente pode ter vários telefones
 
 3) Nas entidades devem conter pelo menos os seguintes campos:
-3.1) Na entidade Cliente deverá conter o campo "nome" e "cpf"
-3.2) Na entidade Telefone deverá conter o campo "ddd" e "número"
+3.1) Na entidade Client deverá conter o campo "name" e "doc"
+3.2) Na entidade Phone deverá conter o campo "number"
 
 4) Agora você deverá criar um endpoint a seguinte estrutura:
 4.1) Deverá retornar em json todos os clientes cadastrado com seus dados, por exemplo:
 
 ```http
-POST /api/clients
+GET /api/clients
 Content-Type: application/json
 {
     "clients": [    
         {
             "id": 1,
-            "nome": "Fulano da Silva",
-            "cpf": "11111111111",
-            "telefone": [
+            "name": "Fulano da Silva",
+            "doc": "11111111111",
+            "phones": [
                 {
                     "id": 1,
-                    "ddd": "95",
-                    "numero": "999999990"
+                    "number": "95999999990"
                 },
                 {
                     "id": 2,
-                    "ddd": "95",
-                    "numero": "999999991"
+                    "number": "95999999991"
                 }
             ],
         },
         {
             "id": 2,
-            "nome": "João da Silva",
-            "cpf": "22222222222",
-            "telefone": [
+            "name": "João da Silva",
+            "doc": "22222222222",
+            "phones": [
                 {
                     "id": 3,
-                    "ddd": "95",
-                    "numero": "999999992"
+                    "number": "95999999992"
                 },
                 {
                     "id": 4,
-                    "ddd": "95",
-                    "numero": "999999994"
+                    "number": "95999999994"
                 }
             ]
         }
@@ -73,18 +69,16 @@ GET /api/client/{id}
 Content-Type: application/json
 {
     "id": 1,
-    "nome": "Fulano da Silva",
-    "cpf": "11111111111",
-    "telefone": [
+    "name": "Fulano da Silva",
+    "doc": "11111111111",
+    "phones": [
         {
             "id": 1,
-            "ddd": "95",
-            "numero": "999999990"
+            "number": "95999999990"
         },
         {
             "id": 2,
-            "ddd": "95",
-            "numero": "999999991"
+            "number": "95999999991"
         }
     ]
 }
