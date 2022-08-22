@@ -3,8 +3,7 @@ Desafio para estágio como desenvolvedor back-end na Pigz.
 
 ## Regras básicas
 1. Você deverá subir este desafio em um repositório público no seu github pessoal.
-2. Você tem até quarta (dia 24) para nos enviar o link do seu repositório.
-3. Caso não consiga concluir todos os passos, não se preocupe, nos envie mesmo assim o que você fez para que possamos avaliar.
+2. Caso não consiga concluir todos os passos, não se preocupe, nos envie mesmo assim o que você fez para que possamos avaliar.
 
 ## O Desafio
 
@@ -16,7 +15,28 @@ Vamos lá:
 - Na entidade Client deverá conter o campo *name* e *doc*
 - Na entidade Phone deverá conter o campo *number*
 
-4 Agora você deverá criar dois endpoints:
+4 Agora você deverá criar quatro endpoints:
+
+- Deverá conter um endpoint para salvar um novo registro de cliente
+
+```http
+POST /api/client
+Content-Type: application/json
+{
+    "name": "Fulano da Silva",
+    "doc": "11111111111"
+}
+```
+
+- Crie um endpoint para salvar um novo registro de telefone para um cliente já cadastrado
+
+```http
+POST /api/...?
+Content-Type: application/json
+{
+    "number": "95999999999"
+}
+```
 
 - Deverá retornar em json todos os clientes cadastrado com seus dados, por exemplo:
 
