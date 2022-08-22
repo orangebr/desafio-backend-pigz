@@ -1,27 +1,24 @@
-# estagio-pigz
+## estagio-pigz
 Desafio para estágio como desenvolvedor back-end na Pigz. 
 
-# Regras básicas
+## Regras básicas
 1. Você deverá subir este desafio em um repositório público no seu github pessoal.
 2. Você tem até quarta (dia 24) para nos enviar o link do seu repositório.
 3. Caso não consiga concluir todos os passos, não se preocupe, nos envie mesmo assim o que você fez para que possamos avaliar.
 
-# O Desafio
+## O Desafio
 
 Vamos lá:
-1) Criar as seguintes entidades
-1.1) Client
-1.2) Phone
+1. Criar as entidades `Client` e `Phone`
+2. A relação entre as entidades será: um *client* pode ter vários *phones*
 
-2) A relação entre as entidades será:
-2.1) Um cliente pode ter vários telefones
+3. Nas entidades devem conter pelo menos os seguintes campos:
+- Na entidade Client deverá conter o campo *name* e *doc*
+- Na entidade Phone deverá conter o campo *number*
 
-3) Nas entidades devem conter pelo menos os seguintes campos:
-3.1) Na entidade Client deverá conter o campo "name" e "doc"
-3.2) Na entidade Phone deverá conter o campo "number"
+4 Agora você deverá criar dois endpoints:
 
-4) Agora você deverá criar um endpoint a seguinte estrutura:
-4.1) Deverá retornar em json todos os clientes cadastrado com seus dados, por exemplo:
+- Deverá retornar em json todos os clientes cadastrado com seus dados, por exemplo:
 
 ```http
 GET /api/clients
@@ -62,7 +59,7 @@ Content-Type: application/json
 }
 ```
 
-4.2) Deverá retornar em json o cliente passado no parâmetro id, por exemplo:
+- Deverá retornar em json o cliente passado no parâmetro id, por exemplo:
 
 ```http
 GET /api/client/{id}
