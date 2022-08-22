@@ -4,6 +4,7 @@ Desafio para estágio como desenvolvedor back-end na Pigz.
 ## Regras básicas
 1. Você deverá subir este desafio em um repositório público no seu github pessoal.
 2. Caso não consiga concluir todos os passos, não se preocupe, nos envie mesmo assim o que você fez para que possamos avaliar.
+3. Deverá ser usado obrigatoriamente o framework *Symfony PHP*;
 
 ## O Desafio
 
