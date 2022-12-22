@@ -1,4 +1,4 @@
-## estagio-pigz
+## Back-end Pigz
 Desafio para estágio como desenvolvedor back-end na Pigz. 
 
 ## Regras básicas
