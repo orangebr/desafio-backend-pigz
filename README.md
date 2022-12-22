@@ -1,5 +1,5 @@
 ## Back-end Pigz
-Desafio para estágio como desenvolvedor back-end na Pigz. 
+Desafio para vaga de desenvolvedor back-end na Pigz. 
 
 ## Regras básicas
 1. Você deverá subir este desafio em um repositório público no seu github pessoal.
