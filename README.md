@@ -28,8 +28,8 @@ Foi falado também na mesma sprint, que um cliente de uma concessionária de ve�
 Em resumo, seria uma plataforma de negociação de veículos (veículos contendo o máximo de informações possíveis para compra e venda) e pesquisa de preços e histórico da Tabela FIPE.
 O primeiro passo do projeto, seria construir uma estrutura simples com as seguintes opções:
 
-1. CRUD para cadastrar informações do veículo;
-2. CRUD para cadastrar informações relacionadas a tabela FIPE;
+1. CRUD para informações do veículo;
+2. CRUD para informações relacionadas a tabela FIPE;
 3. Somente pessoas autorizadas (adminstrador) poderão cadastrar informações do veículo e tabela FIPE (Definir niveís de usuários);
 3. Listagem dos veículos que estão disponíveis para vender;
 4. Comparação do veículo selecionado com a tabela FIPE
